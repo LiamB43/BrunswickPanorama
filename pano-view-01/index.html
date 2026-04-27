@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css
+  <title>360 View</title>
 
-  https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.jsscript>
+  <!-- Pannellum CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css"
+  />
+
+  <!-- Pannellum JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js">
+  </script>
 
   <style>
     html, body {
@@ -25,12 +35,12 @@
 
 <script>
   pannellum.viewer('pano', {
-    "type": "equirectangular",
-    "panorama": "pano.jpg",
-    "autoLoad": true,
-    "yaw": 0,
-    "pitch": 0,
-    "hfov": 105
+    type: "equirectangular",
+    panorama: "pano.jpg",
+    autoLoad: true,
+    yaw: 0,
+    pitch: 0,
+    hfov: 105
   });
 </script>
 
